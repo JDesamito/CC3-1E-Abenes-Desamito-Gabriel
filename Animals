@@ -1,0 +1,70 @@
+
+package AbenesDesamitoGabriel;
+
+public class Animals {
+    public static void main(String[] args) {
+        
+        AnimalBP turtle = new AnimalBP();
+        System.out.println("");
+        turtle.setType("Reptile");
+        String turtleType = turtle.getType();
+        System.out.println("Type =" + turtleType);
+        
+        turtle.setNumberOfFeet(4);
+        int turtleFeet = turtle.getNumberOfFeet();
+        System.out.println("Number of feet = " + turtleFeet);
+        
+        turtle.setColor("Green");
+        String turtleColor = turtle.getColor();
+        System.out.println("Color = " + turtleColor);
+        
+        turtle.setEgg(true);
+        boolean turtleEgg = turtle.getEgg();
+        System.out.println("Egg = " + turtleEgg);
+        
+        //Turtle
+        
+        
+        AnimalBP monkey = new AnimalBP();
+        System.out.println("");
+        monkey.setType("Mammal");
+        String monkeyType = monkey.getType();
+        System.out.println("Type =" + monkeyType);
+        
+        monkey.setNumberOfFeet(2);
+        int monkeyFeet = monkey.getNumberOfFeet();
+        System.out.println("Number of feet = " + monkeyFeet);
+        
+        monkey.setColor("Brown");
+        String monkeyColor = monkey.getColor();
+        System.out.println("Color = " + monkeyColor);
+        
+        monkey.setEgg(false);
+        boolean monkeyEgg = monkey.getEgg();
+        System.out.println("Egg = " + monkeyEgg);
+        
+        //Monkey
+        
+        
+        AnimalBP cat = new AnimalBP();
+        System.out.println("");
+        cat.setType("Mammal");
+        String catType = cat.getType();
+        System.out.println("Type =" + catType);
+        
+        cat.setNumberOfFeet(4);
+        int catFeet = cat.getNumberOfFeet();
+        System.out.println("Number of feet = " + catFeet);
+        
+        cat.setColor("Black");
+        String catColor = cat.getColor();
+        System.out.println("Color = " + catColor);
+        
+        cat.setEgg(false);
+        boolean catEgg = cat.getEgg();
+        System.out.println("Egg = " + catEgg);
+        
+        //Cat
+        
+    } //End of main
+} //End of class
