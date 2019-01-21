@@ -1,0 +1,59 @@
+package AbenesDesamitoGabriel;
+import java.util.Scanner;
+public class GetMean {
+
+    public static void main(String[] args) {
+
+        Scanner sc;
+
+        float arr[];
+
+        while (true) {
+
+            try {
+                sc = new Scanner(System.in);
+                System.out.print("How many numbers: ");
+
+                int n = sc.nextInt();
+
+                arr = new float[n];
+
+                for (int i = 0; i < arr.length; i++) {
+                    System.out.print("[" + i + "] Input a number: ");
+                    
+                    while (!sc.hasNextFloat()) {
+                        sc.next();
+                        System.out.println("ERROR. Please Try Again. ");
+                        System.out.print("[" + i + "] Input a number: ");
+                    }
+                    
+                    arr[i] = sc.nextFloat();
+                    
+                }
+
+                System.out.println("The mean is = " + getMean(arr));
+                break;
+                
+            } catch (Exception e) {
+
+                System.out.println("ERROR. Please Try Again. ");
+
+            }
+
+        } //while (true)
+
+    } //End of main
+
+    public static float getMean(float[] m) {
+
+        float sum = 0;
+
+        for (int i = 0; i < m.length; i++) {
+
+            sum += m[i];
+        }
+        
+        return sum / m.length;
+        
+    } 
+} //End of class
