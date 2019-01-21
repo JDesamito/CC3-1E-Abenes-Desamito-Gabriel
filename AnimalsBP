@@ -1,0 +1,49 @@
+
+package AbenesDesamitoGabriel;
+
+public class AnimalBP {
+       
+    String type;
+    int numberOfFeet;
+    String color;
+    boolean egg;
+    
+    
+    public void setType(String type){
+        this.type = type;
+    }
+    
+    public String getType(){
+        return type;
+    }
+         //type
+    
+    public void setNumberOfFeet(int numberOfFeet){
+        this.numberOfFeet = numberOfFeet;
+    }
+      
+    public int getNumberOfFeet(){
+        return numberOfFeet;
+    }
+         //numberOfFeet
+    
+     public void setColor(String color){
+        this.color = color;
+    }
+    
+    public String getColor(){
+        return color;
+    }
+         //color
+    
+     public void setEgg(boolean egg){
+        this.egg = egg;
+    }
+    
+    public boolean getEgg(){
+        return egg;
+    }
+          //egg
+    
+    
+} //End of class
