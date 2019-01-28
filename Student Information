@@ -13,10 +13,10 @@ public class StudentInformation {
     private String track;
     
     StudentInformation (String term, String college, String SY) {
-        this.university = "University of the Cordilleras";
-        this.college = college;
-        this.term = term;
-        this.SY = SY;
+    this.university = "University of the Cordilleras";
+    this.college = college;
+    this.term = term;
+    this.SY = SY;
     }    
 
     
@@ -64,6 +64,16 @@ public class StudentInformation {
         return track;
     }    
         //Track
+    
+    public void prints() {
+        System.out.println(this.university);
+        System.out.println(this.college);
+        System.out.println(this.term + " " + this.SY);        
+        System.out.println("");                
+        System.out.println("Student Information: \n" + "ID Number: " + this.idNumber + "\n" + "Name: " + this.familyName + this.firstName + "\n" + "Academic Program: " + this.academicProgram + this.track);
+        System.out.println("");
+        System.out.println("****** ");
+    } // End of prints
     
     
 } //End of class
