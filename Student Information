@@ -1,0 +1,69 @@
+package AbenesDesamitoGabriel;
+public class StudentInformation {
+    
+    String university;
+    String college;
+    String term;
+    String SY;
+    
+    private String idNumber;
+    private String familyName;
+    private String firstName;
+    private String academicProgram;
+    private String track;
+    
+    StudentInformation (String term, String college, String SY) {
+        this.university = "University of the Cordilleras";
+        this.college = college;
+        this.term = term;
+        this.SY = SY;
+    }    
+
+    
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+    
+    public String getIdNumber() {
+        return idNumber;
+    }
+        //IdNumber
+    
+    public void setFamilyName(String familyName) {
+        this.familyName = familyName;
+    }
+    
+    public String getFamilyName() {
+        return familyName;
+    }
+        //FamilyName
+    
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    
+    public String getFirstName() {
+        return firstName;
+    }
+        //FirstName
+    
+    public void setAcademicProgram(String academicProgram) {
+        this.academicProgram = academicProgram;
+    }
+    
+    public String getAcademicProgram() {
+        return academicProgram;
+    }
+        //AcademicProgram
+ 
+    public void setTrack(String track) {
+        this.track = track;
+    }
+    
+    public String getTrack() {
+        return track;
+    }    
+        //Track
+    
+    
+} //End of class
