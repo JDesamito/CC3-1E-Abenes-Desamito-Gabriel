@@ -74,6 +74,4 @@ public class StudentInformation {
         System.out.println("");
         System.out.println("****** ");
     } // End of prints
-    
-    
 } //End of class
