@@ -73,5 +73,7 @@ public class StudentInformation {
         System.out.println("Student Information: \n" + "ID Number: " + this.idNumber + "\n" + "Name: " + this.familyName + this.firstName + "\n" + "Academic Program: " + this.academicProgram + this.track);
         System.out.println("");
         System.out.println("****** ");
+        
+        
     } // End of prints
 } //End of class
