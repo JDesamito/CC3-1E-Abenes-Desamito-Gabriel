@@ -66,14 +66,13 @@ public class StudentInformation {
         //Track
     
     public void prints() {
+        System.out.println("****** ");
         System.out.println(this.university);
         System.out.println(this.college);
-        System.out.println(this.term + " " + this.SY);        
-        System.out.println("");                
+        System.out.println(this.term + " " + this.SY);                        
         System.out.println("Student Information: \n" + "ID Number: " + this.idNumber + "\n" + "Name: " + this.familyName + this.firstName + "\n" + "Academic Program: " + this.academicProgram + this.track);
-        System.out.println("");
         System.out.println("****** ");
-        
-        
     } // End of prints
+    
+    
 } //End of class
