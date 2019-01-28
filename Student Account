@@ -6,47 +6,45 @@ public class StudentAccount {
         
         StudentInformation ianne = new StudentInformation("2nd Term, ","College of Information and Technology and Computer Science","S.Y. 2018-2019");
         ianne.setIdNumber("18-3596-842");
-        //IdNumber
+            //IdNumber
         ianne.setFamilyName("DESAMITO, ");
-        //FamilyName
+            //FamilyName
         ianne.setFirstName("JULIANNE MARIE");
-        //FirstName
+            //FirstName
         ianne.setAcademicProgram("BSIT - ");
-        //AcademicProgram
+            //AcademicProgram
         ianne.setTrack("WEB TRACK");
-        //Track
+            //Track
         ianne.prints();
-        // End of Student Information
+            // End of Student Information
         
         StudentInformation cloe = new StudentInformation("2nd Term, ","College of Information and Technology and Computer Science","S.Y. 2018-2019");
         cloe.setIdNumber("18-4581-952");
-        //IdNumber
+            //IdNumber
         cloe.setFamilyName("GABRIEL, ");
-        //FamilyName
+            //FamilyName
         cloe.setFirstName("CLOE MAE");
-        //FirstName
+            //FirstName
         cloe.setAcademicProgram("BSIT - ");
-        //AcademicProgram
+            //AcademicProgram
         cloe.setTrack("NETWORK AND SECURITY TRACK");
-        //Track
+            //Track
         cloe.prints();
-        // End of Student Information
+            // End of Student Information
         
         StudentInformation weng = new StudentInformation("2nd Term, ","College of Information and Technology and Computer Science","S.Y. 2018-2019");
         weng.setIdNumber("18-3596-842");
-        //IdNumber
+            //IdNumber
         weng.setFamilyName("ABENES, ");
-        //FamilyName
+            //FamilyName
         weng.setFirstName("SHIARENE NEFERTI");
-        //FirstName
+            //FirstName
         weng.setAcademicProgram("BSIT - ");
-        //AcademicProgram
+            //AcademicProgram
         weng.setTrack("WEB TRACK");
-        //Track
+            //Track
         weng.prints();
-        // End of Student Information
+            // End of Student Information
         
     } //End of main
-    
-     
 } //End of class
