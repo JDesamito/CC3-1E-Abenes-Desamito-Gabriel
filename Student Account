@@ -1,0 +1,36 @@
+package AbenesDesamitoGabriel;
+public class StudentAccount {
+                                           
+        
+    static void print() {
+        
+        StudentInformation jianne = new StudentInformation("2nd Term, ","College of Information and Technology and Computer Science","S.Y. 2018-2019");
+        jianne.setIdNumber("18-3596-842");
+        String id = jianne.getIdNumber();
+        
+
+        jianne.setFamilyName("DESAMITO, ");
+        String fm = jianne.getFamilyName();
+        
+
+        jianne.setFirstName("JIANNE");
+        String fn = jianne.getFirstName();
+        
+
+        jianne.setAcademicProgram("BSIT - ");
+        String ap = jianne.getAcademicProgram();
+        
+
+        jianne.setTrack("WEB TRACK");
+        String tr = jianne.getTrack();
+        
+        System.out.println(jianne.university);
+        System.out.println(jianne.college);
+        System.out.println(jianne.term + " " + jianne.SY);
+        
+        System.out.println("");
+        System.out.println("Student Info: \n" + "ID Number: " + id + "\n" + "Name: " + fm + fn + "\n" + "Academic Program: " + ap + tr);        
+    }   
+    
+     
+} //End of class
