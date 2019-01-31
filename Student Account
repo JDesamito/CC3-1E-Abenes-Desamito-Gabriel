@@ -33,7 +33,7 @@ public class StudentAccount {
             // End of Student Information
         
         StudentInformation weng = new StudentInformation("2nd Term, ","College of Information and Technology and Computer Science","S.Y. 2018-2019");
-        weng.setIdNumber("18-3596-842");
+        weng.setIdNumber("18-3856-474");
             //IdNumber
         weng.setFamilyName("ABENES, ");
             //FamilyName
@@ -41,7 +41,7 @@ public class StudentAccount {
             //FirstName
         weng.setAcademicProgram("BSIT - ");
             //AcademicProgram
-        weng.setTrack("WEB TRACK");
+        weng.setTrack("NETWORK AND SECURITY TRACK");
             //Track
         weng.prints();
             // End of Student Information
