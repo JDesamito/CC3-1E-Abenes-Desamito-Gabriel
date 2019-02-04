@@ -1,0 +1,71 @@
+package rpg;
+
+public class Character {
+    
+    static Dice dice = new Dice();
+	String name;
+	int strength;
+	int dexterity;
+	int intelligence;
+	int maxLife;
+	int currentLife;
+        int damage;
+
+	public Character(String n, int s, int d, int i) {
+		this.name = n;
+		this.strength = s;
+		this.dexterity = d;
+		this.intelligence = i;
+		maxLife = (dice.roll()+10)*10;
+		currentLife = maxLife;
+
+	}
+
+	public int attack() {
+		int attack = (dice.roll() * this.strength) + this.intelligence + this.dexterity;
+                this.damage = attack;
+		return attack;
+	}
+
+	public void wound(int damage) {
+		damage = dice.roll();
+		currentLife -= damage;
+	}
+
+	public void heal(int heal) {
+		heal = dice.roll();
+		while (currentLife < maxLife) {
+			currentLife += heal;
+		}
+	}
+
+	public String getName() {
+		return name;
+
+	}
+
+	public int getStrength() {
+		return strength;
+
+	}
+
+	public int getDexterity() {
+		return dexterity;
+
+	}
+
+	public int getIntelligence() {
+		return intelligence;
+	}
+
+	public int getCurrentLife() {
+		return currentLife;
+	}
+
+	public int getMaxLife() {
+		return maxLife;
+	}
+	
+
+	
+} // End of class
