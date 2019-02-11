@@ -22,7 +22,7 @@ public class Character {
 	}
 
 	public int attack() {
-		int attack = (dice.roll() * this.strength) + this.intelligence + this.dexterity;
+		int attack = ((dice.roll() * this.strength) + this.intelligence + this.dexterity) * 2;
                 this.damage = attack;
 		return attack;
 	}
