@@ -1,8 +1,9 @@
+
 package rpg;
 
 public class TestCharacter {
     
-    static Dice dice = new Dice();
+static Dice dice = new Dice();
     static Dice dice2 = new Dice();
 
     public static void main(String[] args) {
@@ -12,14 +13,14 @@ public class TestCharacter {
         boolean a = true;
         int i = 1;
 
-        while (a) {
+       while (a) {
             System.out.println("*******");
             System.out.println("Round " + i);
             System.out.println("*******");
             System.out.println("Go!! Fight!! Win!! ");
             System.out.println(weng.name + " HP = " + weng.currentLife + "\t" + kloey.name + " HP = " + kloey.currentLife);
             System.out.println("");
-            System.out.println(kloey.name + " hits " + weng.name + " for " + kloey.attack() + "\n" + weng.name +" hits " + kloey.name + " for " + weng.attack());
+            System.out.println(kloey.name + " hits " + weng.name + " for " + kloey.attack());
             System.out.println("");
             
             weng.currentLife -= kloey.damage;
@@ -63,9 +64,7 @@ public class TestCharacter {
             if (weng.currentLife == 0 && kloey.currentLife == 0) {
                 System.out.println("!!!!!! DRAW !!!!!!");
             }
-        } //while
-        
-        
-        
-    } // End of main
-} //End of class
+            
+            
+    } //End of main
+} // End of class
