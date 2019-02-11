@@ -23,13 +23,22 @@ public class TestCharacter {
             System.out.println("");
             
             weng.currentLife -= kloey.damage;
-            kloey.currentLife -= weng.damage;
-            
             if (weng.currentLife < 0) {
                 weng.currentLife = 0;
+                System.out.println("---------------------------------");
+                System.out.println(weng.name + " HP = " + weng.currentLife + "\t" + kloey.name + " HP = " + kloey.currentLife);
+                System.out.println(weng.name + " FAINTS :((");
+                break;
             }
+            System.out.println(weng.name +" hits " + kloey.name + " for " + weng.attack());
+            System.out.println("---------------------------------");        
+            
+            kloey.currentLife -= weng.damage;
             if (kloey.currentLife < 0) {
                 kloey.currentLife = 0;
+                System.out.println(weng.name + " HP = " + weng.currentLife + "\t" + kloey.name + " HP = " + kloey.currentLife);
+                System.out.println(kloey.name + " FAINTS :((");
+                break;
             }
             
             System.out.println(weng.name + " HP = " + weng.currentLife + "\t" + kloey.name + " HP = " + kloey.currentLife);
@@ -40,10 +49,15 @@ public class TestCharacter {
             if (weng.currentLife <= 0 || kloey.currentLife <= 0) {
                 a = false;
             }
-            if (weng.currentLife <= 0 && kloey.currentLife > 0) {
+            
+            if (i == 4)
+                break;
+            }
+          
+            if (weng.currentLife <= 0 && kloey.currentLife > 0 || weng.currentLife < kloey.currentLife) {
                 System.out.println("!!!!!! " + kloey.name + " WINS !!!!!!");
             }
-            if (kloey.currentLife <= 0 && weng.currentLife > 0) {
+            if (kloey.currentLife <= 0 && weng.currentLife > 0 || kloey.currentLife < weng.currentLife) {
                 System.out.println("!!!!!! " + weng.name + " WINS !!!!!!");
             }
             if (weng.currentLife == 0 && kloey.currentLife == 0) {
